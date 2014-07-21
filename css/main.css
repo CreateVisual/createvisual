@@ -333,6 +333,7 @@ main {
 		font-weight: normal;
 		text-transform: uppercase;
 	}
+	.aboutLinkRow a.tight { letter-spacing: -1px;   }
 
 #sponsors { 
 	position: absolute;
@@ -397,6 +398,7 @@ main {
 	height: 142px; 
 }
 
+.vContainer .n06 { background: url(../img/n/06.png) center no-repeat; }
 .vContainer .n07 { background: url(../img/n/07.png) center no-repeat; }
 .vContainer .n09 { background: url(../img/n/09.png) center no-repeat; }
 .vContainer .n11 { background: url(../img/n/11.png) center no-repeat; }
@@ -433,7 +435,17 @@ main {
 .vContainer:hover { -webkit-filter: grayscale(100%); }
 
 	
-
+.tooltip {
+	display:none;
+	position:absolute;
+	border:1px solid #333;
+	background-color:#161616;
+	border-radius:5px;
+	padding:10px;
+	color:#fff;
+	font-size:13pt;
+	text-transform: uppercase;
+}
 
 
 /* ==========================================================================
