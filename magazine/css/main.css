@@ -109,10 +109,10 @@ textarea {
 body, html {
 	height: 100%;
 	min-height: 100%;
-	background-color: #000000;
+	background-color: #fff;
 }
 body {
-	
+	color: #fff;
 }
 .no-js {
 	padding-top: 106px;
@@ -121,8 +121,8 @@ h2 {
 	font-family: 'Open Sans', sans-serif;
 	margin-top: 0;
 
-	color: #fff8de;
-	font-size: 18pt;
+	color: #fff;
+	font-size: 20pt;
 	margin-bottom: 0px;
 	font-weight: extra-bold;
 	letter-spacing: 2px;
@@ -152,265 +152,109 @@ main {
 	left: 0;
 }
 .bcg {
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
-	height: 100%;
-	width: 100%;
 }
 
+
 .hsContainer {
-	width: 100%;
+	width: 1024px;
+	top: 0;
+	left: 50%;
+	margin-left: -512px;
 	height: 100%;
-	overflow: hidden;
 	position: relative;
+	text-align: center;
 }
 
 .hsContent {
-	min-width: 1024px;
-	position: absolute;
+	max-width: 1024px;
+	position: relative;
 	left: 50%;
 	top: 50%;
 }
 	.hsContent h2  {
-		
-		color: #fff8de;
-		font-size: 16px;
-		margin-bottom: 0px;
-		
-		font-weight: bold;
-		letter-spacing: 3px;
-		
-	}
-	.hsContent p {
-	}
-	.hsContent a {
-		color: #b2b2b2;
-		text-decoration: underline;
-	}
-
-
-/* Medium devices (tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-
-}	
-
-/* Slide 1 */
-#slide-1 .bcg {background-image:url('../img/bg1.png')}
-#slide-1 .hsContent {
-	top: 40%;
-}
-#slide-1 h2 {
-}
-
-/* Slide 2 */
-#slide-2 .bcg {background-image:url('../img/bg2_1000.png')}
-#slide-2 .hsContent {
-	top: 10%;
-}
-#slide-2 h2 {
-	text-align: center;
-	color: #fff;
-	font-weight: bold;
-	font-size: 20pt;
-}
-
-/* Slide 3 */
-#slide-3 .bcg {background-image:url('../img/bg3_1100.png')}
-#slide-3 .hsContent {
-	top: 20%;
-}
-	#slide-3 h2 {
 		text-align: center;
 		color: #fff;
-		text-transform: uppercase;
+		font-weight: bold;
+		font-size: 20pt;
+		margin-bottom: 0px;
+		letter-spacing: 3px;
 	}
+	
+#imgPanel {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 1024px;
+	margin-left: -512px;
+	z-index: 100;
+	padding-top: 500px;
+}
+	#imgPanel .ar  { text-align: right; }
 
+	.imgContainer {
+		position: relative;
+		padding-top: 310px;
+		padding-left: 5%;
+		padding-right: 5%;
+		width: 90%;
+		display: inline-block;
+	}
+		.imgContainer img {
+			position: relative;
+			display: inline-block;
+			max-width: 370px;
+		}
+		.imgInfo  {
+			padding-top: 4px;
+			
+		}
+			.imgInfo  p {
+				margin: 0;
+				color: #000;
+				line-height: 100%;
+				text-shadow: 1px 1px 1px rgba(255, 255, 255, 1);
+			}
+			.imgInfo a  {
+				color: #a91e23;
+				
+			}
+		
 
+.bgPanel {
+	position: relative;
+}
+		
+.bgImgInfo {
+	position: absolute;
+	right: -180px;
+	bottom: -10px;
+	width: 180px;
+	min-height: 20px;
+	background: url('../img/shadow_white.png') no-repeat bottom left;
+	text-align: left;
+}
+	.bgImgInfo p {
+		padding-bottom: 19px;
+		padding-left: 7px; 
+		margin: 0;
+		color: #000;
+	}
+	.bgImgInfo a {
+		color: #a91e23;
+	}	
+		
 .logo {
 	position: fixed;
 	left: 50%;
 	margin-left: -84px;
 	top: 0;
-	z-index: 100;
-	
+	z-index: 99;	
 	width: 168px;
 	height: 126px;
-	background-image:url('../img/Createlogo_black.png');
-}
-
-.logoBigger {
-	position: absolute;
-	left: 50%;
-	margin-left: -244px;
-	top: 0%;
-	z-index: 100;
-	
-	width: 489px;
-	height: 367px;
-	background-image:url('../img/logo_big.png');	
-}
-
-	
-.smallerLogo {
-	position: fixed;
-	left: 50%;
-	margin-left: -84px;
-	top: 0;
-	z-index: 100;
-	
-	width: 168px;
-	height: 126px;
-	background-image:url('../img/Createlogo_black.png');
-}
-
-.whiteLogo {
-	position: fixed;
-	left: 50%;
-	margin-left: -84px;
-	top: 0;
-	z-index: 100;
-	
-	width: 168px;
-	height: 126px;
-	background-image:url('../img/Createlogo_white.png');
-}
-
-
-.welcomeText {
-	position: relative;
-	width: 489px;
-	margin-left: -244px;
-	color: #fff;
-	background-color: rgba(0,0,0,0.6);
-	text-transform:uppercase;
-}
-.welcomeText h2 {
-	padding: 50px 10px 0 10px ;
-	margin: 0;
-	text-align: center;
-	color: #fff;
-	font-size: 20pt;
-	font-weight: extra-bold;
-	letter-spacing: 0px;
-	line-height: 60%;
-}
-.welcomeText p {
-	padding: 0 40px 40px 40px ;
-	margin-bottom: 12px;
-	text-align: center;
-	font-size: 16pt;
-	letter-spacing: 1px;
-
-}
-
-.aboutLinkBox {
-	position: relative;
-	width: 1024px;
-	left: 50%;
-	top: 35%;
-	margin-left: -509px;
-	margin-bottom: 12px;
+	background-image:url('../img/logo_red.png');
+	background-size: 168px 126px;
 	
 }
-
-	.aboutLinkRow {
-		background-color: rgba(0,0,0,0.4);
-		position: relative;
-		width: 25%;
-		float: left;
-		padding: 20px 0;
-		margin-top: 20px;
-	}
-	.aboutLinkRow a {
-		position: relative;
-		color: #fff;
-		display: block;
-		padding: 5px 0 5px 73px;
-		text-decoration: none;
-		font-size: 17pt;
-		font-weight: normal;
-		text-transform: uppercase;
-	}
-	.aboutLinkRow a.tight { letter-spacing: -1px;   }
-
-#sponsors { 
-	position: absolute;
-	width: 1024px;
-	height: 172px;
-	left: 50%;
-	top: 70%;
-	margin-left: -509px;
- }
-
-#sponsorBox {
-	position: absolute;
-	width: 1020px;
-	height: 142px;
-	left: 50%;
-	top: 75%;
-	margin-left: -509px;
-}
-	#sponsorBox  h2 {
-		margin-bottom: 8px;
-		text-transform: uppercase;
-	}
-	#sponsorBox .sContainer {
-		width: 253px;
-		padding-right: 2px;
-		float: left;
-	}
-
-.vidBox {
-	position: relative;
-	width: 1024px;
-	left: 50%;
-	top: 32%;
-	margin-left: -510px;
-}
-	.vidBox  h2 {
-		margin-bottom: 8px;
-	}
-	.vidBox .vContainer {
-		position: relative;
-		width: 254px;
-		height: 142px;
-		padding-right: 2px;
-		padding-bottom: 2px;
-		float: left;
-		
-	  -webkit-transition: all 1s ease;
-		 -moz-transition: all 1s ease;
-		   -o-transition: all 1s ease;
-		  -ms-transition: all 1s ease;
-			  transition: all 1s ease;
-
-	}
-	
-/* classes for number overlay (videos) */
-.vContainer .n { 
-	z-index: 10; 
-	position: absolute; 
-	top: 0; 
-	left: 0; 
-	width: 254px; 
-	height: 142px; 
-}
-
-.vContainer .n06 { background: url(../img/n/06.png) center no-repeat; }
-.vContainer .n07 { background: url(../img/n/07.png) center no-repeat; }
-.vContainer .n09 { background: url(../img/n/09.png) center no-repeat; }
-.vContainer .n11 { background: url(../img/n/11.png) center no-repeat; }
-.vContainer .n14 { background: url(../img/n/14.png) center no-repeat; }
-.vContainer .n16 { background: url(../img/n/16.png) center no-repeat; }
-.vContainer .n18 { background: url(../img/n/18.png) center no-repeat; }
-.vContainer .n21 { background: url(../img/n/21.png) center no-repeat; }
-.vContainer .n23 { background: url(../img/n/23.png) center no-repeat; }
-.vContainer .n25 { background: url(../img/n/25.png) center no-repeat; }
-.vContainer .n28 { background: url(../img/n/28.png) center no-repeat; }
-.vContainer .n30 { background: url(../img/n/30.png) center no-repeat; }
-
 
 
 /* Hoover overlay in video calendar */
@@ -447,6 +291,18 @@ main {
 	text-transform: uppercase;
 }
 
+
+/* Responsive classes */
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (max-width: 768px) {
+
+	.logo {
+		position: absolute;
+	}
+	
+
+}
 
 /* ==========================================================================
    Helper classes
