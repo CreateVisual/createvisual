@@ -469,7 +469,7 @@ main {
 
 	section {
 		width: 100%;
-		min-width: 400px
+		min-width: 300px
 	}
 
 	.aboutLinkBox, .vidBox, .aboutLinkBox {
@@ -499,9 +499,9 @@ main {
 
 
 	.hsContainer {
-		width: 90%;
-		padding-left: 5%;
-		padding-right: 5%;
+		width: 96%;
+		padding-left: 2%;
+		padding-right: 2%;
 		min-height: 100px;
 		position: static;
 		display: block;
@@ -515,7 +515,7 @@ main {
 		text-align: center;
 		top: 0;
 		left: 0;
-		margin-bottom: 40px;
+		margin-bottom: 0 0 40px 0;
 	}
 		.hsContent h2  {
 			font-size: 14pt;
