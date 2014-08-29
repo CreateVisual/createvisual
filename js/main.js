@@ -90,8 +90,8 @@
 		};
 	}
 	 
-	enquire.register("screen and (min-width : 768px)", initAdjustWindow(), false);
-	enquire.register("screen and (min-width : 480px)", initAdjustWindow(), false);
+	enquire.register("screen and (max-width : 768px)", initAdjustWindow(), false);
+	enquire.register("screen and (max-width : 480px)", initAdjustWindow(), false);
 
 	
 	// Tooltip text

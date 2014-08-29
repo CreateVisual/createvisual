@@ -388,76 +388,114 @@ main {
 /* Medium devices (tablets, 768px and up) */
 @media only screen and (max-width: 768px) {
 
-	section {
-		min-width: 512px;
-	}
-	.logo {
-		position: absolute;
-	}
-
-	.welcomeText h2 {
-		font-size: 16pt;
-	}
-	.welcomeText p {
-		font-size: 13pt;
-	}
-
-	
-	#slide-1 .bcg {background: none;}
-	#slide-1 .hsContent { top: 20%; }
-
-	#slide-2 .bcg {background: none;}
-	#slide-2 .hsContent { top: 0%; }
-
-	#slide-3 .bcg {background: none;}
-	#slide-3 .hsContent { top: 30%; }
-
-
 	body {
 		background: url('../img/bg1.png') no-repeat fixed center;
 		background-size: cover;
 	}
 
-	.hsContainer {
+	section {
 		width: 100%;
-		padding-left: 10px;
-		min-height: 768px;
-		overflow: hidden;
-		position: relative;
-		text-align: center;
+		min-width: 300px
 	}
 
-
-	.hsContent {
-		width: 512px;
-		position: relative;
+	.aboutLinkBox, .vidBox, .aboutLinkBox {
+		margin: 0;
 	}
-		.hsContent h2  {
+
+	.logo {
+		position: absolute;
+	}
+
+	.welcomeText {
+		width: 100%;
+		position: static;
+		margin: 150px 0 0 0;
+		padding: 0;
+
+	}
+		.welcomeText h2 {
 			font-size: 15pt;
 		}
+		.welcomeText p {
+			font-size: 12pt;
+		}
 
-	.vidBox {
-		width: 512;
-		margin-left: -256px;
+	
+	.bcg {background: none;}
+
+
+	.hsContainer {
+		width: 96%;
+		padding-left: 2%;
+		padding-right: 2%;
+		min-height: 100px;
+		position: static;
+		display: block;
+		overflow: visible;
 	}
 
-	.aboutLinkBox a {
-		font-size: 90%
+	.hsContent {
+		width: 100%;
+		padding: 0;
+		position: static;
+		text-align: center;
+		top: 0;
+		left: 0;
+		margin-bottom: 0 0 40px 0;
 	}
+		.hsContent h2  {
+			font-size: 14pt;
+		}
+
+
+	.aboutLinkBox {
+		position: static;
+		width: 100%;
+	}
+		.aboutLinkBox a {
+			font-size: 95%;
+			padding: 10px 0 10px 20px;
+			margin: 0;
+			width: 40%;
+		}
+
 
 	.vOverlay h3 { font-size: 80% }
 	.vOverlay p { font-size: 80% }
 
-	.aboutLinkBox {
-		position: relative;
-		width: 512px;
-		margin-left: -256px;
+
+	.vidBox {
+		width: 100%;
+		margin: 0;
 	}
-		.aboutLinkBox a {
-			font-size: 95%
+
+		.vidBox .vContainer {
+			width: 170px;
+			height: 95px;
 		}
 
+		.vidBox .vContainer img {
+			width: 170px;
+		}
+
+	.aboutLinkBox {
+		width: 100%;
+	}
+	.aboutLinkBox a {
+		font-size: 90%
+				width: 49%;
+
+	}
+
+	.vOverlay {
+		width: 170px; 
+		height: 95px;
+	}
+	.vOverlay h3 { font-size: 80% }
+	.vOverlay p { font-size: 80% }
+
 }
+
 
 /* Medium devices (tablets, 480px and up) */
 @media only screen and (max-width: 480px) {
