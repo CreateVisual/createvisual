@@ -421,7 +421,9 @@ main {
 		}
 
 	
-	.bcg {background: none;}
+	#slide-1 .bcg {background-image: none;}
+	#slide-2 .bcg {background-image: none;}
+	#slide-3 .bcg {background-image: none;}
 
 
 	.hsContainer {
@@ -436,27 +438,30 @@ main {
 
 	.hsContent {
 		width: 100%;
-		padding: 0;
+		padding: 0 0 50px 0;
 		position: static;
 		text-align: center;
 		top: 0;
 		left: 0;
-		margin-bottom: 0 0 40px 0;
+		margin-bottom: 0;
 	}
 		.hsContent h2  {
 			font-size: 14pt;
 		}
 
 
-	.aboutLinkBox {
-		position: static;
-		width: 100%;
+	div.aboutLinkBox {
+		position: relative;
+		width: 350px;
+		top: 0;
+		left: 50%;
+		margin-left: -175px;
 	}
 		.aboutLinkBox a {
 			font-size: 95%;
 			padding: 10px 0 10px 20px;
 			margin: 0;
-			width: 40%;
+			width: 150px;
 		}
 
 
@@ -465,8 +470,11 @@ main {
 
 
 	.vidBox {
-		width: 100%;
-		margin: 0;
+		position: relative;
+		width: 350px;
+		top: 0;
+		left: 50%;
+		margin-left: -175px;
 	}
 
 		.vidBox .vContainer {
@@ -507,10 +515,13 @@ main {
 
 	section {
 		width: 100%;
-		min-width: 300px
+		min-width: 300px;
 	}
 
 	.aboutLinkBox, .vidBox, .aboutLinkBox {
+		position: static;
+		width: 350px;
+
 		margin: 0;
 	}
 
@@ -533,7 +544,9 @@ main {
 		}
 
 	
-	.bcg {background: none;}
+	#slide-1 .bcg {background-image: none;}
+	#slide-2 .bcg {background-image: none;}
+	#slide-3 .bcg {background-image: none;}
 
 
 	.hsContainer {
@@ -560,9 +573,10 @@ main {
 		}
 
 
-	.aboutLinkBox {
+	div.aboutLinkBox {
 		position: static;
 		width: 100%;
+		margin: 0;
 	}
 		.aboutLinkBox a {
 			font-size: 95%;
@@ -576,7 +590,7 @@ main {
 	.vOverlay p { font-size: 80% }
 
 
-	.vidBox {
+	div.vidBox {
 		width: 100%;
 		margin: 0;
 	}
