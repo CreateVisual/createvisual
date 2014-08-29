@@ -439,9 +439,13 @@ main {
 		}
 
 	.vidBox {
-		width: 512px;
-		margin-left: -256px;
+		width: 344px;
+		margin-left: -172px;
 	}
+		.vidBox .vContainer img {
+			width: 170px;
+		}
+
 
 	.aboutLinkBox {
 		position: relative;
