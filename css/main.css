@@ -439,12 +439,27 @@ main {
 		}
 
 	.vidBox {
-		width: 344px;
+		width: 350px;
 		margin-left: -172px;
 	}
+		.vidBox .vContainer {
+			width: 170px;
+		}
+
 		.vidBox .vContainer img {
 			width: 170px;
 		}
+
+.aboutLinkBox a {
+	font-size: 90%
+}
+
+.vOverlay {
+	width: 170px; 
+	height: 95px;
+}
+	.vOverlay h3 { font-size: 80% }
+	.vOverlay p { font-size: 80% }
 
 
 	.aboutLinkBox {
